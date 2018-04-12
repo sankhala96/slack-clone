@@ -9,13 +9,24 @@ export default (sequlize, DataType) => {
             unique: true
         },
         password: DataType.STRING
-    });
+    },{underscored: true});
 
     User.associate = (models) => {
         User.belongsToMany(models.Team, {
             through: 'member',
-            foreignKey: 'userId'
+            foreignKey: {
+                name: 'userId',
+                field: 'user_id'
+            }
         });
+
+        User.belongsToMany(models.Team, {
+            through: 'channel_member',
+            foreignKey: {
+                name: 'userId',
+                field: 'user_id'
+            }
+        })
     };
 
     return User;

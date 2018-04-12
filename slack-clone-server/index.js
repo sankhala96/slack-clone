@@ -24,7 +24,7 @@ app.use(graphqlEndpoint,
 app.use('/graphiql',
     graphiqlExpress({ endpointURL: graphqlEndpoint}));
 
-models.sequelize.sync().then(() => {
+models.sequelize.sync({force: true}).then(() => {
     app.listen(8080, () => {
         console.log('running on 8080')
     });
