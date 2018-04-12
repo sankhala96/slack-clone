@@ -5,8 +5,9 @@ import { makeExecutableSchema } from 'graphql-tools'
 
 import typeDefs from './schema'
 import resolvers from './resolver'
+import models from './models'
 
-export const schema = makeExecutableSchema({
+const schema = makeExecutableSchema({
     typeDefs,
     resolvers
 });
@@ -23,6 +24,8 @@ app.use(graphqlEndpoint,
 app.use('/graphiql',
     graphiqlExpress({ endpointURL: graphqlEndpoint}));
 
-app.listen(8080, () => {
-    console.log('running on 8080')
+models.sequelize.sync().then(() => {
+    app.listen(8080, () => {
+        console.log('running on 8080')
+    });
 });
