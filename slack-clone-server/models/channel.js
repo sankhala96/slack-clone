@@ -2,7 +2,7 @@ export default (sequlize, DataType) => {
     const Channel = sequlize.define('channel', {
         name: DataType.STRING,
         public: DataType.BOOLEAN
-    }, {underscored: true});
+    });
 
     Channel.associate = (models) => {
         Channel.belongsTo(models.Team, {

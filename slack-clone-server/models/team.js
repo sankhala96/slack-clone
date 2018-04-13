@@ -4,7 +4,7 @@ export default (sequlize, DataType) => {
             type: DataType.STRING,
             unique: true
         }
-    }, {underscored: true});
+    });
 
     Team.associate = (models) => {
         Team.belongsToMany(models.User, {
