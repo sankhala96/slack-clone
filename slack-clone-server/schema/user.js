@@ -12,10 +12,10 @@ export default `
     }
     
     type Mutation {
-        createUser(
+        register(
             username: String!,
             email: String!,
             password: String!
-        ): User!
+        ): Boolean!
     }
 `;
