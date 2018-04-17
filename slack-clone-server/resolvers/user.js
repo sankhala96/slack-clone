@@ -1,7 +1,7 @@
-import bcrypt from 'bcryptjs'
-import _ from 'lodash'
+import bcrypt from 'bcryptjs';
+import _ from 'lodash';
 
-import {tryLogin} from "../auth";
+import { tryLogin } from '../auth';
 
 const formatErrors = (e, models) => {
     if (e instanceof models.sequelize.ValidationError) {
@@ -13,39 +13,26 @@ const formatErrors = (e, models) => {
 
 export default {
     Query: {
-        getUser: (parent, {id}, { models}) => models.User.findOne({ where: {id}}),
-        allUsers: (parent, args, {models}) => models.User.findAll()
+        getUser: (parent, { id }, { models }) => models.User.findOne({ where: { id } }),
+        allUsers: (parent, args, { models }) => models.User.findAll(),
     },
     Mutation: {
-        login: async (parent, {email, password}, {models, SECRET, SECRET2}) =>
-            tryLogin(email, password, models, SECRET),
-
-        register: async (parent, {password, ...otherArgs}, { models }) => {
+        login: (parent, { email, password }, { models, SECRET, SECRET2 }) =>
+            tryLogin(email, password, models, SECRET, SECRET2),
+        register: async (parent, args, { models }) => {
             try {
-                if (password.length < 5 || password.length > 100) {
-                    return {
-                        ok: false,
-                        errors: [
-                            {
-                                path: 'password',
-                                message: 'The password needs to be between 5 and 100 characters long',
-                            },
-                        ],
-                    };
-                }
+                const user = await models.User.create(args);
 
-                const hashedPassword = await bcrypt.hash(password, 12);
-                const user = await models.User.create({...otherArgs, password: hashedPassword});
                 return {
                     ok: true,
                     user,
                 };
-            }catch (err){
+            } catch (err) {
                 return {
                     ok: false,
                     errors: formatErrors(err, models),
                 };
             }
-        }
-    }
+        },
+    },
 };
