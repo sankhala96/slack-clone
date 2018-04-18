@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97765e73-5f0e-46f4-a792-842344de8468" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slack-clone-client/src/routes/CreateTeam.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slack-clone-server/formatErrors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-client/src/routes/Login.js" afterPath="$PROJECT_DIR$/slack-clone-client/src/routes/Login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-client/src/routes/Register.js" afterPath="$PROJECT_DIR$/slack-clone-client/src/routes/Register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-server/models/user.js" afterPath="$PROJECT_DIR$/slack-clone-server/models/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-client/src/index.js" afterPath="$PROJECT_DIR$/slack-clone-client/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-client/src/routes/index.js" afterPath="$PROJECT_DIR$/slack-clone-client/src/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-server/auth.js" afterPath="$PROJECT_DIR$/slack-clone-server/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-server/index.js" afterPath="$PROJECT_DIR$/slack-clone-server/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-server/resolvers/team.js" afterPath="$PROJECT_DIR$/slack-clone-server/resolvers/team.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-server/resolvers/user.js" afterPath="$PROJECT_DIR$/slack-clone-server/resolvers/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slack-clone-server/schema/team.js" afterPath="$PROJECT_DIR$/slack-clone-server/schema/team.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,26 +24,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Register.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/slack-clone-client/src/routes/Register.js">
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/slack-clone-server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/slack-clone-client/src/routes/Login.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slack-clone-server/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+            <state relative-caret-position="-122">
+              <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,25 +76,27 @@
         <option value="$PROJECT_DIR$/slack-clone-server/models/message.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/models/channel.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/schema/hi.js" />
-        <option value="$PROJECT_DIR$/slack-clone-server/schema/team.js" />
-        <option value="$PROJECT_DIR$/slack-clone-server/resolvers/team.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/schema/channel.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/schema/message.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/resolvers/message.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/resolvers/channel.js" />
         <option value="$PROJECT_DIR$/slack-clone-client/src/App.js" />
         <option value="$PROJECT_DIR$/slack-clone-client/src/routes/Home.js" />
-        <option value="$PROJECT_DIR$/slack-clone-client/src/index.js" />
         <option value="$PROJECT_DIR$/slack-clone-client/src/routes/register.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/schema/errors.js" />
-        <option value="$PROJECT_DIR$/slack-clone-client/src/routes/index.js" />
-        <option value="$PROJECT_DIR$/slack-clone-server/index.js" />
-        <option value="$PROJECT_DIR$/slack-clone-server/auth.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/schema/user.js" />
-        <option value="$PROJECT_DIR$/slack-clone-server/resolvers/user.js" />
         <option value="$PROJECT_DIR$/slack-clone-server/models/user.js" />
         <option value="$PROJECT_DIR$/slack-clone-client/src/routes/Register.js" />
         <option value="$PROJECT_DIR$/slack-clone-client/src/routes/Login.js" />
+        <option value="$PROJECT_DIR$/slack-clone-client/src/routes/index.js" />
+        <option value="$PROJECT_DIR$/slack-clone-server/schema/team.js" />
+        <option value="$PROJECT_DIR$/slack-clone-server/formatErrors.js" />
+        <option value="$PROJECT_DIR$/slack-clone-server/resolvers/user.js" />
+        <option value="$PROJECT_DIR$/slack-clone-server/resolvers/team.js" />
+        <option value="$PROJECT_DIR$/slack-clone-client/src/routes/CreateTeam.js" />
+        <option value="$PROJECT_DIR$/slack-clone-server/auth.js" />
+        <option value="$PROJECT_DIR$/slack-clone-client/src/index.js" />
+        <option value="$PROJECT_DIR$/slack-clone-server/index.js" />
       </list>
     </option>
   </component>
@@ -110,7 +117,7 @@
     <handled-path value="$PROJECT_DIR$/slack-clone-client/node_modules" />
     <handled-path value="$PROJECT_DIR$/slack-clone-server/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="634" />
     <option name="width" value="732" />
     <option name="height" value="728" />
@@ -131,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,14 +159,14 @@
             <path>
               <item name="slack-clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="slack-clone" type="462c0819:PsiDirectoryNode" />
-              <item name="slack-clone-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="slack-clone-server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,15 +212,16 @@
       <workItem from="1523609541973" duration="13029000" />
       <workItem from="1523777737033" duration="6014000" />
       <workItem from="1523863518227" duration="2180000" />
-      <workItem from="1523949472290" duration="5263000" />
+      <workItem from="1523949472290" duration="5618000" />
+      <workItem from="1524043205639" duration="3200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39208000" />
+    <option name="totallyTimeSpent" value="42763000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23214285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -305,7 +311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -331,7 +336,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="61" lean-forward="false" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-          <folding />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -448,23 +455,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-server/models/team.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slack-clone-server/schema/hi.js" />
-    <entry file="file://$PROJECT_DIR$/slack-clone-server/schema/team.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slack-clone-server/schema/channel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -488,14 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-server/resolvers/team.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slack-clone-server/resolvers/message.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -508,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -526,25 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-client/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-client/src/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -556,39 +519,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-server/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/slack-clone-server/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
           <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/slack-clone-server/resolvers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,10 +539,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slack-clone-client/src/routes/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="55" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-client/src/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/schema/team.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/formatErrors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/resolvers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/models/team.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/resolvers/team.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-client/src/routes/CreateTeam.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slack-clone-server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
