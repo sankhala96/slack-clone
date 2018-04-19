@@ -5,7 +5,8 @@ import decode from 'jwt-decode'
 import Home from './Home'
 import Register from './Register'
 import Login from './Login'
-import CreateTeam from "./CreateTeam";
+import CreateTeam from './CreateTeam'
+import ViewTeam from './ViewTeam'
 
 const isAuthenticated = () => {
     const token = localStorage.getItem('token');
@@ -42,6 +43,7 @@ export default () => (
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/register" exact component={Register} />
+            <Route path="/view-team" exact component={ViewTeam} />
             <Route path="/login" exact component={Login} />
             <PrivateRoute path="/create-team" exact component={CreateTeam} />
 
