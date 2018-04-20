@@ -1,17 +1,18 @@
 import Sequelize from 'sequelize'
 
-const sequwlize = new Sequelize('slack', 'postgres', 'postgres', {
+const sequelize = new Sequelize('slack', 'postgres', 'postgres', {
     dialect: 'postgres',
+    operatorsAliases: Sequelize.Op,
     define: {
         underscored: true
     }
 });
 
 const models = {
-    User: sequwlize.import('./user'),
-    Channel: sequwlize.import('./channel'),
-    Message: sequwlize.import('./message'),
-    Team: sequwlize.import('./team')
+    User: sequelize.import('./user'),
+    Channel: sequelize.import('./channel'),
+    Message: sequelize.import('./message'),
+    Team: sequelize.import('./team')
 };
 
 Object.keys(models).forEach((modelName) => {
@@ -20,7 +21,7 @@ Object.keys(models).forEach((modelName) => {
     }
 });
 
-models.sequelize = sequwlize;
+models.sequelize = sequelize;
 models.Sequelize = Sequelize;
 
 export default models;
