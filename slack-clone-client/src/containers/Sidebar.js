@@ -6,24 +6,41 @@ import decode from 'jwt-decode'
 
 import Channels from '../components/Channels';
 import Teams from '../components/Teams';
+import AddChannelModal from '../components/AddChannelModal';
 
-const Sidebar = ({data: {loading, allTeams}, currentTeamId }) => {
-    if(loading) {
-        return null;
-    }
+class Sidebar extends React.Component {
+    state={
+        openAddChannelModal: false
+    };
 
-    const teamIdx = currentTeamId ? findIndex(allTeams, ['id', parseInt(currentTeamId, 10)]) : 0;
-    const team  = allTeams[teamIdx];
-    let username = '';
+    handleAddChannelClick = () => {
+      this.setState({openAddChannelModal: true});
+    };
+
+    handleCloseAddChannelModal = () => {
+        this.setState({openAddChannelModal: false});
+    };
 
 
-    try {
-        const token = localStorage.getItem('token');
-        const {user} = decode(token);
-        username = user.username;
-    }catch(err){}
+    render(){
+        const {data: {loading, allTeams},currentTeamId} = this.props;
 
-    return [
+        if (loading) {
+            return null;
+        }
+
+        const teamIdx = currentTeamId ? findIndex(allTeams, ['id', parseInt(currentTeamId, 10)]) : 0;
+        const team = allTeams[teamIdx];
+        let username = '';
+
+
+        try {
+            const token = localStorage.getItem('token');
+            const {user} = decode(token);
+            username = user.username;
+        } catch (err) {}
+
+        return [
             <Teams
                 key="team-sidebar"
                 teams={allTeams.map(t => ({
@@ -38,10 +55,18 @@ const Sidebar = ({data: {loading, allTeams}, currentTeamId }) => {
                 teamName={team.name}
                 username={username}
                 channels={team.channels}
-                users = {[{id:1, name: 'slackbot'}, {id:2, name: 'user1'}]}
+                users={[{id: 1, name: 'slackbot'}, {id: 2, name: 'user1'}]}
+                onAddChannelClick={this.handleAddChannelClick}
+            />,
+            <AddChannelModal
+                teamId={currentTeamId}
+                open={this.state.openAddChannelModal}
+                onClose={this.handleCloseAddChannelModal}
+                key="sidebar-add-channel-model"
             />
-        ]
-};
+        ];
+    }
+}
 
 const allTeamsQuery = gql`
 {
