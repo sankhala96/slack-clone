@@ -49,7 +49,7 @@ const channel = ({id, name}, teamId) => (
 const user = ({id, name}) =>
     <SideBarListItem key={`user-${id}`}><Bubble/>{name}</SideBarListItem>;
 
-export default ({teamName, username, channels, users, onAddChannelClick, teamId}) => (
+export default ({teamName, username, channels, users, onAddChannelClick, teamId, onInvitePeopleClick}) => (
     <ChannelWrapper>
         <PushLeft>
             <TeamNameHeader>{teamName}</TeamNameHeader>
@@ -66,6 +66,9 @@ export default ({teamName, username, channels, users, onAddChannelClick, teamId}
                 <SideBarListHeader>Direct Message</SideBarListHeader>
                 {users.map(user)}
             </SideBarList>
+        </div>
+        <div>
+            <a href="#invite-people" onClick={onInvitePeopleClick}>+ Invite People</a>
         </div>
     </ChannelWrapper>
 )
