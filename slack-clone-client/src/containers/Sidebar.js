@@ -12,20 +12,19 @@ export default class Sidebar extends React.Component {
         openInvitePeopleModal: false
     };
 
-    handleAddChannelClick = () => {
-      this.setState({openAddChannelModal: true});
+    toggleAddChannelModal = (e) => {
+        if(e){
+            e.preventDefault();
+        }
+      this.setState(state => ({openAddChannelModal: !state.AddChannelModal}));
     };
 
-    handleCloseAddChannelModal = () => {
-        this.setState({openAddChannelModal: false});
-    };
 
-    handleInvitePeopleClick = () => {
-        this.setState({openInvitePeopleModal: true});
-    };
-
-    handleCloseInvitePeopleModal = () => {
-        this.setState({openInvitePeopleModal: false});
+    toggleInvitePeopleModal = (e) => {
+        if(e){
+            e.preventDefault();
+        }
+        this.setState(state => ({openInvitePeopleModal: !state.openInvitePeopleModal}));
     };
 
     render(){
@@ -52,20 +51,20 @@ export default class Sidebar extends React.Component {
                 channels={team.channels}
                 teamId={team.id}
                 users={[{id: 1, name: 'slackbot'}, {id: 2, name: 'user1'}]}
-                onAddChannelClick={this.handleAddChannelClick}
-                onInvitePeopleClick={this.handleInvitePeopleClick}
+                onAddChannelClick={this.toggleAddChannelModal}
+                onInvitePeopleClick={this.toggleInvitePeopleModal}
             />,
             <AddChannelModal
                 teamId={team.id}
                 open={openAddChannelModal}
-                onClose={this.handleCloseAddChannelModal}
+                onClose={this.toggleAddChannelModal}
                 key="sidebar-add-channel-model"
             />,
             <InvitePeopleModal
                 teamId={team.id}
                 open={openInvitePeopleModal}
-                onClose={this.handleCloseInvitePeopleModal}
-                key="sidebar-add-channel-model"
+                onClose={this.toggleInvitePeopleModal}
+                key="sidebar-invite-people-model"
             />
         ];
     }
