@@ -37,7 +37,7 @@ const SendMessage = ({
 );
 
 const createMessageMutation = gql`
-    mutation($channelId: Int!, $text: String){
+    mutation($channelId: Int!, $text: String!){
         createMessage(channelId: $channelId, text: $text)
     }
 `;
