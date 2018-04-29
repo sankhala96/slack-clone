@@ -8,7 +8,6 @@ import cors from 'cors'
 import jwt from 'jsonwebtoken'
 import {createServer} from 'http'
 import {execute, subscribe} from 'graphql'
-import {PubSub} from 'graphql-subscriptions'
 import {SubscriptionServer} from 'subscriptions-transport-ws'
 
 import models from './models'
@@ -84,7 +83,7 @@ models.sequelize.sync().then(() => {
             },
             {
                 server,
-                path: '/subcriptions'
+                path: '/subscriptions'
             }
         )
     })
