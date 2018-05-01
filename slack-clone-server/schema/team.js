@@ -2,7 +2,6 @@ export default `
     type Team {
         id: Int!
         name: String!
-        owner: Int!
         members: [User]!
         channels: [Channel!]!
     }
@@ -11,11 +10,6 @@ export default `
         ok: Boolean!
         team: Team
         errors: [Error!]
-    }
-    
-    type Query {
-        allTeams: [Team!]!
-        inviteTeams: [Team!]!
     }
     
     type VoidResponse {

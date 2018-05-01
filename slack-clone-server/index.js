@@ -75,7 +75,7 @@ app.use('/graphiql',
 
 const server = createServer(app);
 
-models.sequelize.sync().then(() => {
+models.sequelize.sync({}).then(() => {
     server.listen(8080, () => {
         console.log('running on 8080');
         new SubscriptionServer(
