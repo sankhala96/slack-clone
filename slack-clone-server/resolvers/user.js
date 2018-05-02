@@ -6,21 +6,13 @@ import requiresAuth from '../permissions'
 export default {
     User: {
         teams: (parent, args, {models, user}) =>
-            // models.sequelize.query(
-            //     'select * from teams as team join members as member on team.id = member.team_id where member.user_id = ?',
-            //     {
-            //         replacements: [user.id],
-            //         models: models.Team,
-            //     },
-            // )
-            models.Team.findAll({
-                    include: [
-                        {
-                            model: models.User,
-                            where: {id: user.id}
-                        },
-                    ],
-                }, {raw: true}
+            models.sequelize.query(
+                'select * from teams as team join members as member on team.id = member.team_id where member.user_id = ?',
+                {
+                    replacements: [user.id],
+                    model: models.Team,
+                    raw: true,
+                },
             )
     },
 
