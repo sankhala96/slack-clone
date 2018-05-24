@@ -52,7 +52,7 @@ export default class Sidebar extends React.Component {
                 channels={team.channels}
                 teamId={team.id}
                 isOwner={team.admin}
-                users={[{id: 1, name: 'slackbot'}, {id: 2, name: 'user1'}]}
+                users={team.directMessageMembers}
                 onAddChannelClick={this.toggleAddChannelModal}
                 onDirectMessageClick={this.toggleDirectMessageModal}
                 onInvitePeopleClick={this.toggleInvitePeopleModal}
